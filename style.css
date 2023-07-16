@@ -9,12 +9,18 @@ body{
 }
 
 .x-wing{
-    width: 90vw;
-    height: 90vh;
+    width: 85vw;
+    height: 85vh;
     margin: auto;
 }
 
 .x-wing img{
     width: 100%;
     height: 100%;
+    animation:rotate 4s ease-in-out infinite;
+
+}
+
+@keyframes rotate {
+    50% {transform: rotate(8deg);}
 }
