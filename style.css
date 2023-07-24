@@ -9,18 +9,41 @@ body{
 }
 
 .x-wing{
-    width: 85vw;
-    height: 85vh;
+    width: 75vw;
+    height: 75vh;
     margin: auto;
+    animation: rotate 4s ease-in-out infinite; 
 }
 
 .x-wing img{
     width: 100%;
     height: 100%;
-    animation:rotate 4s ease-in-out infinite;
-
 }
 
 @keyframes rotate {
     50% {transform: rotate(8deg);}
 }
+
+.body, .left-wing, .right-wing{
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.body{
+    top: 57%;
+    left: 35%;
+}
+
+.left-wing{
+    top: 23.5%;
+    left: 32%
+}
+
+.right-wing{
+    top: 54%;
+    right: 20%;
+}
+
