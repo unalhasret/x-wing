@@ -12,7 +12,12 @@ body{
     width: 75vw;
     height: 75vh;
     margin: auto;
+    pointer-events: none;
     animation: rotate 4s ease-in-out infinite; 
+}
+
+.x-wing:hover:not(img){
+    animation-play-state: paused;
 }
 
 .x-wing img{
@@ -30,6 +35,7 @@ body{
     height: 25px;
     position: absolute;
     border-radius: 50%;
+    pointer-events: auto;
 }
 
 .body{
